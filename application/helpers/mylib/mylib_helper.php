@@ -158,6 +158,17 @@ if ( ! function_exists('convert_timestamp'))
 	}
 }
 
+if ( ! function_exists('current_file'))
+{
+	function current_file($file) {
+	    $current_file = explode('/', $file);
+	    $current_file = end($current_file);
+	    return $current_file;
+	}
+}
+
+    $current_file = explode('/', $_SERVER['SCRIPT_NAME']);
+    $current_file = end($current_file);
 
 if ( ! function_exists('last_referer'))
 {

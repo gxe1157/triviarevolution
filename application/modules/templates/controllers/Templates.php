@@ -10,13 +10,19 @@ function __construct()
 }
 
 
-function public_main( )
+function public_main( $data = array() )
 {
-    // if( !isset($data['nav_module']) )
-    //     $data['nav_module']= $data['view_module'] == 'partials' ? '': $data['view_module'].'/';
+    $data['title']       = $data['page_title'];
+    $data['contents']    = $data['page_url']  ? :'main';
 
-    $this->load->view('public_main/html_master_view', null);
+    if( !isset($data['view_module']) ){
+        $data['view_module']= $this->uri->segment(2) =='' ?
+                         'partials' : $this->uri->segment(1);
+    }
+    // checkArray($data,1);
+    $this->load->view('public_main/html_master_view', $data);
 }
+
 
 function admin( $data = array() )
 {
@@ -26,20 +32,6 @@ function admin( $data = array() )
     $this->load->view('admin/admin', $data);
 }
 
-
-function get_nav($menu_level)
-{
-    $mysql_query = "SELECT * FROM main_menu
-                    WHERE parentid = 0 And level = $menu_level
-                    ORDER BY parentid, priority";
-
-    $query = $this->db->query($mysql_query);
-    foreach ($query->result() as $row) {
-       $sub_nav_titles =  $this->_get_sub_cat($row->id);
-       $parent_titles[$row->title] = count($sub_nav_titles)>0 ? $sub_nav_titles : $row->link;
-    }
-    return $parent_titles;
-}
 
 
 } // end Templates

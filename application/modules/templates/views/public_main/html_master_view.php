@@ -19,11 +19,19 @@
           <?= $this->load->view('html_navbar') ?>       
       </header>
 
-      <!-- Swiper-->
-          <?= $this->load->view('swiper') ?>                
+      <!-- Main Content -->
+      <div class="div-menu-message">
+          <?php 
+              $data = ( isset($columns) && !empty($columns) ) ? : null;
+              $data = ( isset($columns_not_allowed) && !empty($columns_not_allowed) ) ? : array();
+// quit($view_module." | ".$contents,1);
 
-      <!-- Latest News-->
-          <?= $this->load->view('content') ?>                      
+              $this->load->view( $view_module.'/'.$contents, $data );
+          ?>
+      </div> <!-- End Main Content -->
+
+
+
       <!-- Page Footer-->
           <?= $this->load->view('html_footer') ?>                            
       <!-- Modal Video-->
