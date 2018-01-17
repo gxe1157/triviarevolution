@@ -1,6 +1,26 @@
 <?php
+
+$sponsor_list =
+[
+  ['Angry Erik Brewing', 'angryerik.com'],
+  ['Beach Haus Brewery', 'beachhausbeer.com'],
+  ['Bolero Snort Brewery', 'bolerosnort.com'],
+  ['Brix City Brewing', 'brixcitybrewing.com'],
+  ['Climax Brewing', 'climaxbrewing.com'],
+  ['Cricket Hill Brewery', 'crickethillbrewery.com'],
+  ['Czig Meister Brewing', 'crickethillbrewery.com'],
+  ['Demented Brewing', 'dementedbrewing.com'],
+  ['Flying Fish Brewing', 'flyingfish.com'],
+  ['Jersey Girl Brewing', 'jerseygirlbrewing.com'],
+  ['Krogh’s Brew Pub', 'kroghs.com'],
+  ['Magnify Brewing', 'magnifybrewing.com'],
+  ['Man Skirt Brewing', 'manskirtbrewing.com'],
+  ['Ramstein Brewery', 'ramsteinbeer.com'],
+  ['River Horse Brewing', 'riverhorse.com']
+];
+
     $bm_pages=image_pagination( 'public/images/sponsors');
-    // checkArray($bm_pages,1);
+    // checkArray($sponsor_list,1);
 ?>
 
       <!-- Section Breadcrumbs-->

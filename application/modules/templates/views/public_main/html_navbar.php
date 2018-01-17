@@ -38,7 +38,7 @@
                 </div>
                 <div class="rd-navbar-panel-item rd-navbar-panel-item-right" >
                     <div>
-<!--                       <form class="navbar-form" role="search">
+                      <form class="navbar-form" role="search">
                       <div class="input-group" style="height: 40px;">
                           <input type="text" class="form-control" placeholder="Enter your search request here..." name="q">
                           <div class="input-group-btn">
@@ -48,7 +48,7 @@
                       </form>
                     </div>
                     </form>
- -->
+
                 </div>
                 <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
               </div>
@@ -62,22 +62,26 @@
                   </div>
                   <!-- RD Navbar List-->
                   <div class="rd-navbar-list">
-                        <ul class="list-inline lt">
+<!--                         <ul class="list-inline lt">
                           <li><a class="rd-navbar-list-link" href="#"><img src="<?= base_url() ?>public/images/partners-1-inverse-75x42.png" alt="" width="75" height="42"/></a></li>
                           <li><a class="rd-navbar-list-link" href="#"><img src="<?= base_url() ?>public/images/partners-2-inverse-78x41.png" alt="" width="78" height="41"/></a></li>
                           <li><a class="rd-navbar-list-link" href="#"><img src="<?= base_url() ?>public/images/partners-3-inverse-65x44.png" alt="" width="65" height="44"/></a></li>
 
                         </ul>
+ -->
                   </div>
+
                   <!-- RD Navbar Search-->
                   <div class="rd-navbar-search">
                     <div>
-                        <ul class="list-inline rt" >
+
+<!--                         <ul class="list-inline rt" >
                           <li><a class="rd-navbar-list-link" href="#"><img src="<?= base_url() ?>public/images/partners-1-inverse-75x42.png" alt="" width="75" height="42"/></a></li>
                           <li><a class="rd-navbar-list-link" href="#"><img src="<?= base_url() ?>public/images/partners-2-inverse-78x41.png" alt="" width="78" height="41"/></a></li>
                           <li><a class="rd-navbar-list-link" href="#"><img src="<?= base_url() ?>public/images/partners-3-inverse-65x44.png" alt="" width="65" height="44"/></a></li>
 
                         </ul>
+ -->                        
                     </div>
                   </div>
                 </div>
